@@ -1,5 +1,5 @@
 ## Прототип интерфейса
-https://github.com/kirja1980/ETU_PR_2021/blob/main/info/interface.jpg
+info/interface.jpg
 ## Диаграмма прецедентов
 
 ## Диаграмма состояний
