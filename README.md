@@ -3,7 +3,6 @@
 ## Спецификация
 
 **Прототип интерфейса**
-![](info/interface.jpg)
 ![](info/1.jpg)
 ![](info/3.jpg)
 ![](info/2.jpg)
