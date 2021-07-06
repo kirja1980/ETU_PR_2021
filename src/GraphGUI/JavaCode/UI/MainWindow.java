@@ -71,6 +71,15 @@ public class MainWindow extends JFrame {
     public static void addMenuToPane(JFrame frame) {
         JMenuBar jMenuBar = new JMenuBar();
 
+        JMenu file = new JMenu("Файл");
+        jMenuBar.add(file);
+
+        JMenuItem load = new JMenuItem("Загрузить");
+        JMenuItem save = new JMenuItem("Созранить");
+
+        file.add(load);
+        file.add(save);
+
         JMenu editing = new JMenu("Создание");
         jMenuBar.add(editing);
 
@@ -88,21 +97,6 @@ public class MainWindow extends JFrame {
         deleting.addActionListener(e -> userMeta.editMode = UserMeta.EditMode.Deleting);
         moving.addActionListener(e -> userMeta.editMode = UserMeta.EditMode.Moving);
         linking.addActionListener(e -> userMeta.editMode = UserMeta.EditMode.Linking);
-
-        JMenu modify = new JMenu("Редактирование");
-        jMenuBar.add(modify);
-
-        JMenuItem undo = new JMenuItem("Отменить");
-        JMenuItem redo = new JMenuItem("Вернуть");
-
-        modify.add(undo);
-        modify.add(redo);
-
-        modify.addSeparator();
-
-        JMenuItem renaming = new JMenuItem("Групповое переименование");
-
-        modify.add(renaming);
 
         JMenu algorithm = new JMenu("Алгоритм");
         jMenuBar.add(algorithm);
@@ -189,5 +183,11 @@ public class MainWindow extends JFrame {
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void main(String[] args) {
         var mainWindow = new MainWindow();
+
+        graph.addNode(100, 100);
+        graph.addNode(200, 100);
+        graph.addNode(300, 100);
+        graph.addNode(400, 100);
+
     }
 }

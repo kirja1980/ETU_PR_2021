@@ -47,7 +47,7 @@ class DrawPanel extends JPanel {
         // Установил сглаживание рёбер.
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING , userMeta.settings.UIStyleSetting_Edge_KEY_ANTIALIASING);
 
-        double angle1 = Math.atan2(finish.getY() - start.getY(), finish.getX() - start.getX() + ((isCurved) ? radius*2 : 0));
+        double angle1 = Math.atan2(finish.getY() - start.getY(), finish.getX() - start.getX() + ((isCurved) ? radius * 2 : 0));
         double cosx1 = Math.cos(angle1);
         double siny1 = Math.sin(angle1);
         double cosx2 = Math.cos(angle1 + Math.PI);
@@ -58,7 +58,7 @@ class DrawPanel extends JPanel {
         var fin2x = cosx2 * radius + finish.getX() + ((isCurved) ? radius : 0);
         var fin2y = siny2 * radius + finish.getY() + ((isCurved) ? radius : 0);
 
-        QuadCurve2D QC2D = new QuadCurve2D.Double(fin1x, fin1y,(fin2x+fin1x)/2, ((isCurved) ? (fin2x+fin1x)/2: (fin2y+fin1y)/2), fin2x, fin2y);
+        QuadCurve2D QC2D = new QuadCurve2D.Double(fin1x, fin1y,(fin2x+fin1x) / 2, ((isCurved) ? (fin2x+fin1x)/2: (fin2y+fin1y)/2), fin2x, fin2y);
         AffineTransform tx = new AffineTransform();
         AffineTransform oldTx = g2d.getTransform();
         Polygon polygon = new Polygon();
@@ -88,7 +88,7 @@ class DrawPanel extends JPanel {
                         new Point2D.Double(node.getValue().x, node.getValue().y),
                         new Point2D.Double(child.x, child.y),
                         userMeta.settings.UIStyleSetting_NodeSize / 2d,
-                        false);
+                        true);
             }
         }
     }
