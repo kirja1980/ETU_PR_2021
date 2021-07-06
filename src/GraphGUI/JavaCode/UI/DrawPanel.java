@@ -88,7 +88,7 @@ class DrawPanel extends JPanel {
                         new Point2D.Double(node.getValue().x, node.getValue().y),
                         new Point2D.Double(child.x, child.y),
                         userMeta.settings.UIStyleSetting_NodeSize / 2d,
-                        true);
+                        false);
             }
         }
     }

@@ -184,10 +184,5 @@ public class MainWindow extends JFrame {
     public static void main(String[] args) {
         var mainWindow = new MainWindow();
 
-        graph.addNode(100, 100);
-        graph.addNode(200, 100);
-        graph.addNode(300, 100);
-        graph.addNode(400, 100);
-
     }
 }
