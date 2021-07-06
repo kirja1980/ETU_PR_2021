@@ -4,6 +4,9 @@
 
 **Прототип интерфейса**
 ![](info/interface.jpg)
+![](info/1.jpg)
+![](info/3.jpg)
+![](info/2.jpg)
 **Диаграмма прецедентов**
 ![](info/UML_use-case.jpg)
 **Диаграмма состояний**
