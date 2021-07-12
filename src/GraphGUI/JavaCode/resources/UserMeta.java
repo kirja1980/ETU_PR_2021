@@ -9,6 +9,8 @@ public class UserMeta {
 
     public EditMode editMode = EditMode.None;
 
+    public Graph.Node buffer = null;
+
     public enum EditMode {
         Creating,
         Deleting,
